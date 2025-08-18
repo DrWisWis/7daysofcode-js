@@ -2,7 +2,9 @@ const name = prompt("Qual o seu nome?")
 const age = prompt("Quantos anos vc tem?")
 const ling_prop = prompt("Qual linguagem de programação vc esta estudanto?")
 
-console.log(`Olá ${name}, você tem ${age} anos e já está aprendendo ${ling_prop}  `)
+var msg = (`Olá ${name}, você tem ${age} anos e já está aprendendo ${ling_prop}  `)
+
+alert(msg)
 
 let n = prompt(`Você gosta de estudar ${ling_prop}? Responda com o número 1 para SIM ou 2 para NÃO.`)
 
