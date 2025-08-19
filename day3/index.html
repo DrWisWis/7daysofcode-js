@@ -8,22 +8,26 @@
 <body>
     <script>
         let area = prompt("Se quer seguir para área de Front-End ou seguir para a área de Back-End.'Escreva como esta na pergunta.'")
-        if(area == Front-End){
+        if(area.toLowerCase == Front-End){
             let front = prompt("Vc quer aprender REACT ou VUE")
-        } else if (area == Back-End){
+        } else if (area.toLowerCase == Back-End){
             let back = prompt("Vc quer aprender C# ou Java")
         } else {
-            alert("Você não digitou nenhuma cidade válida")
+            alert("Você não digitou nenhuma area válida")
         }
 
         let seguir = prompt("Vc quer seguir na area ou se tornar um Full-Stack")
         alert("Muito Bom, vc tera muito sucesso!")
 
-        let n = 0
+        let continuar = "ok";
 
-        while(n < 10){
-            n++
+        while (continuar.toLowerCase() === "ok") {
+            const tecnologiaExtra = prompt("Qual tecnologia você gostaria de aprender?");
+            alert(`Muito bom! ${tecnologiaExtra} é uma ótima tecnologia!`);
+            continuar = prompt("Tem mais alguma tecnologia que você gostaria de aprender? Digite 'ok' para sim ou qualquer outra coisa para sair.");
         }
+
+        alert("Parabéns pela sua jornada de aprendizado! 🚀");
 
     </script>
 </body>
