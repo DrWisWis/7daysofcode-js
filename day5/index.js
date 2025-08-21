@@ -24,7 +24,7 @@
     }
   }
 
-  let mensagem = "Lista de compras:\n";
+  let mensagem = "Sua lista de compras:\n";
   for (let categoria in listaDeCompras) {
     mensagem += `   ${categoria}: ${listaDeCompras[categoria].join(", ")}\n`;
   }
